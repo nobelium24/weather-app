@@ -1,13 +1,55 @@
-body {
+#mainDiv{
+  background-image: url(./img1.jpg);
+  background-size: cover;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+#subDiv1{
+  width: 25%;
+  border-radius: 10px;
+  height: 150px;
+  opacity: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+#subDiv2{
+  width: 25%;
+  border-radius: 10px;
+  height: 200px;
+  opacity: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+  outline: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#mainDiv2{
+  text-align: start;
+  width: 100%;
+  
+}
+
+@media only screen and (max-width: 480px) {
+  #subDiv1, #subDiv2{
+    width: 80%;
+    background-color: white;
+  
+  }
 }
